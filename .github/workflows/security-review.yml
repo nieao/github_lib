@@ -1,7 +1,10 @@
 name: Security Review
 
+# Disabled: Requires API Key (OAuth not supported)
+# Enable this when you have ANTHROPIC_API_KEY configured
 on:
-  pull_request:
+  workflow_dispatch:  # Manual trigger only for now
+  # pull_request:
 
 permissions:
   pull-requests: write
